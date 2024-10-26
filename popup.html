@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta CNPJ</title>
+    <style>
+        body {
+            width: 350px;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            width: calc(50% - 5px); /* Ajusta o tamanho dos botões */
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px; /* Adiciona border-radius para arredondar os cantos */
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .resultado p {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .resultado p:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .resultado p:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .copy-btn {
+            background: none;
+            color: #4CAF50;
+            cursor: pointer;
+            font-size: 0.8rem;
+            vertical-align: middle;
+            outline: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            border-radius: 5px; /* Adiciona border-radius para arredondar os cantos */
+        }
+        .copy-btn:hover {
+            color: #455146;
+        }
+        .copy-btn i {
+            margin-right: 5px;
+        }
+        .copy-btn.copiado {
+            color: #455146;
+            pointer-events: none; /* Desabilita eventos de clique quando estiver copiado */
+        }
+        .copy-btn.copiado:hover {
+            color: #455146; /* Mantém a cor verde ao passar o mouse */
+        }
+        .nova-consulta {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px; /* Adiciona border-radius para arredondar os cantos */
+        }
+        .nova-consulta:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Consulta CNPJ</h2>
+    <label for="cnpj">Digite o CNPJ:</label>
+    <input type="text" id="cnpj" placeholder="00.000.000/0000-00">
+    <button id="consultar">Consultar</button>
+    <div class="resultado" id="resultado"></div>
+    <button class="nova-consulta" id="novaConsulta">Nova Consulta</button>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Consulta CNPJ",
+  "description": "Consulta CNPJ utilizando a API BrasilAPI e exibe resultados na página.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "https://brasilapi.com.br/"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
