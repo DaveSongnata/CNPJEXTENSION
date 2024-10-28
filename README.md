@@ -1,4 +1,5 @@
 Para instalar:
+
 1 - Faça o Download do Arquivo ZIP
 
 2 - Abra o Chrome
