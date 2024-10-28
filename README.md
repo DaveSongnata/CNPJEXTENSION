@@ -1,7 +1,7 @@
 Para instalar:
 1 - Faça o Download do Arquivo ZIP
 
-2 - Tenha o Chrome
+2 - Abra o Chrome
 
 3 - Ative o modo desenvolvedor do Chrome
 
